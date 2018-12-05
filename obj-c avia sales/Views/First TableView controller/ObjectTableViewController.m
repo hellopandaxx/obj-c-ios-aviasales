@@ -7,6 +7,7 @@
 //
 
 #import "ObjectTableViewController.h"
+#import "../CustomTableViewCell.h"
 
 @interface ObjectTableViewController ()
 
@@ -16,7 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _tableView = [[UITableView alloc] initWithFrame: self.view.bounds style: UITableViewStylePlain];
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier"];
+    if (!cell) {
+        cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellIdentifier"];
+    }
+    
+    //cell.textLabel.text = [NSString stringWithFormat:@"Object TableView cell %d", indexPath.row];
+    cell.leftLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
+    cell.rightLabel.text = @"Right";
+
+    return cell;
 }
 
 /*

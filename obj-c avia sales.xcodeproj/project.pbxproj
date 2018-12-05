@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8175BB21B7622600619AC2 /* ObjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8175BA21B7622600619AC2 /* ObjectTableViewController.m */; };
+		AF8175BF21B762D600619AC2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8175BE21B762D600619AC2 /* TableViewController.m */; };
+		AF8175C221B7689600619AC2 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8175C121B7689600619AC2 /* CustomTableViewCell.m */; };
 		AF9AF01221AE792100CBD948 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9AF01121AE792100CBD948 /* AppDelegate.m */; };
 		AF9AF01521AE792100CBD948 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9AF01421AE792100CBD948 /* MainViewController.m */; };
 		AF9AF01A21AE792500CBD948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9AF01921AE792500CBD948 /* Assets.xcassets */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8175B921B7622600619AC2 /* ObjectTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectTableViewController.h; sourceTree = "<group>"; };
+		AF8175BA21B7622600619AC2 /* ObjectTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectTableViewController.m; sourceTree = "<group>"; };
+		AF8175BD21B762D600619AC2 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		AF8175BE21B762D600619AC2 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		AF8175C021B7689600619AC2 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		AF8175C121B7689600619AC2 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		AF9AF00D21AE792100CBD948 /* obj-c avia sales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "obj-c avia sales.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9AF01021AE792100CBD948 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF9AF01121AE792100CBD948 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +61,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF8175B721B761E700619AC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF8175BC21B762B500619AC2 /* Second TableView controller */,
+				AF8175B821B761F900619AC2 /* First TableView controller */,
+				AF8175C021B7689600619AC2 /* CustomTableViewCell.h */,
+				AF8175C121B7689600619AC2 /* CustomTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF8175B821B761F900619AC2 /* First TableView controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF8175B921B7622600619AC2 /* ObjectTableViewController.h */,
+				AF8175BA21B7622600619AC2 /* ObjectTableViewController.m */,
+			);
+			path = "First TableView controller";
+			sourceTree = "<group>";
+		};
+		AF8175BC21B762B500619AC2 /* Second TableView controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF8175BD21B762D600619AC2 /* TableViewController.h */,
+				AF8175BE21B762D600619AC2 /* TableViewController.m */,
+			);
+			path = "Second TableView controller";
+			sourceTree = "<group>";
+		};
 		AF9AF00421AE792100CBD948 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +109,7 @@
 		AF9AF00F21AE792100CBD948 /* obj-c avia sales */ = {
 			isa = PBXGroup;
 			children = (
+				AF8175B721B761E700619AC2 /* Views */,
 				AF9AF03321AFA1EA00CBD948 /* Data */,
 				AF9AF02621AE7AD000CBD948 /* Model */,
 				AF9AF01021AE792100CBD948 /* AppDelegate.h */,
@@ -205,6 +244,9 @@
 				AF9AF02F21AE7B5300CBD948 /* City.m in Sources */,
 				AF9AF02C21AE7B1300CBD948 /* Country.m in Sources */,
 				AF9AF03621AFA1FC00CBD948 /* DataManager.m in Sources */,
+				AF8175BF21B762D600619AC2 /* TableViewController.m in Sources */,
+				AF8175BB21B7622600619AC2 /* ObjectTableViewController.m in Sources */,
+				AF8175C221B7689600619AC2 /* CustomTableViewCell.m in Sources */,
 				AF9AF01521AE792100CBD948 /* MainViewController.m in Sources */,
 				AF9AF03921AFB14E00CBD948 /* SecondViewController.m in Sources */,
 				AF9AF03221AE7C3700CBD948 /* Airport.m in Sources */,

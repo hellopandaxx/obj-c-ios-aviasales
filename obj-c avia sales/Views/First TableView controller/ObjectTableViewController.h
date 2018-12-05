@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ObjectTableViewController : UIViewController
+@interface ObjectTableViewController : UIViewController <UITableViewDataSource>
+
+@property (strong, nonnull) UITableView *tableView;
 
 @end
 

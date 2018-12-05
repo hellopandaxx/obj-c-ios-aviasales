@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *leftLabel;
+@property (nonatomic, strong) UILabel *rightLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END
